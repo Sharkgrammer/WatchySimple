@@ -23,7 +23,7 @@ void WatchySimple::drawTime() {
     display.setFont(&DSEG7_Classic_Bold_53);
     String time = "";
 
-    int displayHour
+    int displayHour;
     if (HOUR_12_24 == 12) {
         displayHour = ((currentTime.Hour + 11) % 12) + 1;
     }
